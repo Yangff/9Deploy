@@ -1,0 +1,23 @@
+{
+  "name": "9Deploy",
+  "description": "help you deploy your nodejs app",
+  "version": "0.0.1",
+  "bugs": {
+    "url": "https://github.com/Yangff/9Deploy/issues",
+    "email": "yangff1@gmail.com"
+  },
+  "author": {
+    "Name": "Yangff",
+    "url": "http://yangff.logdown.com",
+    "email": "yangff1@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/Yangff/9Deploy.git"
+  },
+  "dependencies": {
+    "express": "^4.12.0",
+    "nodegit": "^0.2.7",
+    "sqlite3": "^3.0.5"
+  }
+}

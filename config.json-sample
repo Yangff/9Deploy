@@ -1,0 +1,6 @@
+{
+	"databases": "databases.sqlite",
+	"https": true,
+	"httpauth": true,
+	"port": 8010
+}
