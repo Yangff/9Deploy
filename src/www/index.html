@@ -1,0 +1,56 @@
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="Content-Language" content="en">
+		<title>9Deploy Control Panel</title>
+		<link rel="stylesheet" type="text/css" href="<!--!{client_style}-->" />
+		<script type="text/javascript" src="<!--!{client_main}-->"></script>
+	</head>
+	<body>
+		<stage>
+			<spliter>
+				<split left>
+					<list>
+						<listItem bindto="#Status">Status</listItem>
+						<listItem bindto="#Projects">Projects</listItem>
+						<listItem bindto="#CAs">CAs</listItem>
+						
+					</list>
+				</split>
+				<split right>
+					<page route="Status()">
+						<reflect>
+
+						</reflect>
+					</page>
+
+					<page route="Projects(:behavior=all)">
+						<reflect behavior="all">
+							<!--{for project in Projects}-->
+
+						</reflect>
+						<reflect behavior="new">
+
+						</reflect>
+					</page>
+
+					<page route="Project(:id)" reflect="/node/project/:id">
+						
+					</page>
+
+					<page route="CAs(:behavior=all)">
+						<reflect behavior="all">
+
+						</reflect>
+						<reflect behavior="new">
+
+						</reflect>
+						<reflect behavior="delete">
+
+						</reflect>
+					</page>
+				</split>
+			</spliter>
+		</stage>
+	</body>
+</html>
